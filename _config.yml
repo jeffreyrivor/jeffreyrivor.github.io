@@ -1,1 +1,12 @@
+name: 'Jeffrey Rivor'
+timezone: America/Los_Angeles
 theme: jekyll-theme-midnight
+exclude: ["LICENSE"]
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+markdown: GFM
+readme_index:
+  remove_orignals: true

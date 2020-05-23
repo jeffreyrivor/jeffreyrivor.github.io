@@ -1,0 +1,7 @@
+* text=auto
+
+*.csv text
+*.html text
+*.md text
+*.tsv text
+*.yaml text

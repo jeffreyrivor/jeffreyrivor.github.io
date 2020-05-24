@@ -1,7 +1,8 @@
 ---
-title: "Fizzbuzz enterprise-style gone too far"
 date: 2020-05-24 01:30:00 -0700
 ---
+# Fizzbuzz enterprise-style gone too far
+
 "Enterprise-class" code design can very easily degenerate into what I will call "interface obsession"
 (named after the ["primitive obsession" code smell](https://blog.codinghorror.com/code-smells/)). Let's
 take a look at various strategies of abstraction and over-obessions in the context of the classic
@@ -12,6 +13,7 @@ take a look at various strategies of abstraction and over-obessions in the conte
 > For numbers which are multiples of both three and five print “FizzBuzz”.
 
 ## Naïve implementation
+
 Usually, given the time constraints of an interview, a simple loop with case branches is a good first pass.
 
 ```csharp
@@ -68,6 +70,7 @@ static void Main(string[] args)
 ```
 
 ## Going enterprise
+
 Now let's get this ready for enterpise use. Let's say another codebase wants to take a dependency on this
 functionality, so console output isn't suitable (and the console writing actually becomes the performance
 bottleneck at large iteration counts).
@@ -121,6 +124,7 @@ public class FizzBuzz : IFizzBuzz
 ```
 
 ### More parameterization
+
 With this interface being versatile and library use proliferating, now you're getting requests for more
 configurability. The biggest request is for different combinations of outputs for different integer
 multiples. Sounds like it's time to parameterize.
@@ -156,10 +160,12 @@ public class FizzBuzz : IFizzBuzz
 ```
 
 ### More abstraction
+
 At this point, you could easily get requests for more abstractions. Here's some examples and potential
 solutions to consider.
 
 #### Adding an object to contain the rules
+
 A single object is easier to configure in most dependency injection containers than sets, so an object that
 contains all the `DivisibleOutputRule` values makes sense.
 
@@ -176,6 +182,7 @@ public class DivisibleOutputRules : IEnumerable<DivisibleOutputRule>
 ```
 
 #### Adding a class instance factory
+
 Some would argue that a factory interface should be created for creating `FizzBuzz` instances. Maybe
 they're using ASP.NET Core and want the `DivisibleOutputRule` to come from request-lifetime
 [IOptionsSnapshot\<TOptions\>](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1#reload-configuration-data-with-ioptionssnapshot)
@@ -230,6 +237,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 #### Interfaces for the divisibility rule objects
+
 Consumers may clamor for abstractions for `DivisibleOutputRule`, arguing for the ability to mock the
 object or replace it with their own implementations.
 
@@ -254,6 +262,7 @@ implement an interface that was literally just extracted from said POCO, just to
 arguments from the concrete to the interface.
 
 ## Less abstraction: radical reductionism
+
 Those more inclined toward functional-style programming have probably noticed this by now: why is there an
 interface or class at all? The `Generate` method is just LINQ! And you are absolutely right.
 
@@ -273,6 +282,7 @@ in enterprises all the time. However, there are benefits of having a class that 
 will be covered in a future post.
 
 ## Next time: improving FizzBuzz performance for real enterprise scale
+
 There's still one big problem with all the designs for FizzBuzz above: they're computationally expensive per
 call. The LINQ version always loops through all the divisor checks and computes the default `int.ToString()`
 (even if it's unused). It's elegant and succinct, but intolerably slow when called in a hot path. The next

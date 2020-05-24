@@ -13,6 +13,10 @@ defaults:
     values:
       layout: "post"
       author: "Jeffrey Rivor"
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title
 markdown: GFM
 readme_index:
   remove_orignals: true

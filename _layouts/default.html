@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
 	<meta charset="utf-8">
@@ -19,6 +19,12 @@
 					<li class="navbar-link d-md-none{% if page.url == '/' %} active{% endif %}">
 						<a class="nav-link" href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}</a>
 					</li>
+					{% assign pages = site.pages | where_exp: "p", "p.collection != 'posts'" | where_exp: "p", "p.url != '/'" | sort: "title" %}
+					{% for p in pages %}
+					<li class="navbar-link{% if page.url == p.url %} active{% endif %}">
+						<a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+					</li>
+					{% endfor %}
 				</ul>
 				{% if site.show_repo_link or site.show_downloads %}
 				<ul class="navbar-nav">

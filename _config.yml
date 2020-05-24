@@ -24,6 +24,8 @@ feed:
 markdown: GFM
 readme_index:
   remove_orignals: true
+titles_from_headings:
+  collections: true
 plugins:
   - jekyll-feed
   - jekyll-octicons

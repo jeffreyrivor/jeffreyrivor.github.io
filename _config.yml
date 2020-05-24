@@ -14,6 +14,7 @@ defaults:
     values:
       layout: "post"
       author: "Jeffrey Rivor"
+      strip_title: true
 collections:
   posts:
     output: true
@@ -23,8 +24,6 @@ feed:
 markdown: GFM
 readme_index:
   remove_orignals: true
-titles_from_headings:
-  strip_title: true
 plugins:
   - jekyll-feed
   - jekyll-octicons

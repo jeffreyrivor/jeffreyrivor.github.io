@@ -1,10 +1,9 @@
 ---
-layout: default
 title: Posts
 ---
 <h1>All Posts</h1>
 
-<ul>
+<ul class="list-unstyled">
 	{% for post in site.posts %}
 	<li>
 		<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>

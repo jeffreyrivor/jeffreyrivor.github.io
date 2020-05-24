@@ -1,6 +1,5 @@
 title: "Jeffrey Rivor's coding blog"
 timezone: America/Los_Angeles
-theme: jekyll-theme-midnight
 exclude: ["LICENSE"]
 defaults:
   - scope:

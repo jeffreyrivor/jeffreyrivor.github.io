@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	{% if page.collection == 'posts' %}
+	<link href="{{ '/assets/css/syntax.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" />
+	{% endif %}
 	{% seo %}
 </head>
 <body>

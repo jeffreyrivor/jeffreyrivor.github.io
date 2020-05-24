@@ -176,8 +176,8 @@ public class DivisibleOutputRules : IEnumerable<DivisibleOutputRule>
 ```
 
 #### Adding a class instance factory
-Some would argue that a factory interface should be create for creating `FizzBuzz` instances. Maybe they're
-using ASP.NET Core and want the `DivisibleOutputRule` to come from request-lifetime
+Some would argue that a factory interface should be created for creating `FizzBuzz` instances. Maybe
+they're using ASP.NET Core and want the `DivisibleOutputRule` to come from request-lifetime
 [IOptionsSnapshot\<TOptions\>](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1#reload-configuration-data-with-ioptionssnapshot)
 to make the configuration refreshable.
 

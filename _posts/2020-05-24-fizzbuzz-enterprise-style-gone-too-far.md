@@ -1,7 +1,7 @@
 ---
 date: 2020-05-24 01:30:00 -0700
 ---
-# Fizzbuzz enterprise-style gone too far
+# FizzBuzz enterprise-style gone too far
 
 "Enterprise-class" code design can very easily degenerate into what I will call "interface obsession"
 (named after the ["primitive obsession" code smell](https://blog.codinghorror.com/code-smells/)). Let's

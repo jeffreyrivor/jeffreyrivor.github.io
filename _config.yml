@@ -17,6 +17,8 @@ collections:
   posts:
     output: true
     permalink: /:collection/:year/:month/:day/:title
+feed:
+  excerpt_only: true
 markdown: GFM
 readme_index:
   remove_orignals: true

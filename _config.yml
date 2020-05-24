@@ -1,6 +1,7 @@
 title: "Jeffrey Rivor's coding blog"
 timezone: America/Los_Angeles
 exclude: ["LICENSE"]
+permalink: pretty
 defaults:
   - scope:
       path: ""

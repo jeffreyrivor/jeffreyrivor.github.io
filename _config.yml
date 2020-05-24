@@ -5,8 +5,15 @@ exclude: ["LICENSE"]
 defaults:
   - scope:
       path: ""
+      type: pages
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: "post"
+      author: "Jeffrey Rivor"
 markdown: GFM
 readme_index:
   remove_orignals: true

@@ -269,7 +269,7 @@ public static class EnumerableDivisibleOutputRuleExtensions
 ```
 
 So what was all that nonsense for? To demonstrate (albeit through a fairly contrived problem) what happens
-in enterprises all the time. However, there are benefits of having a class that is not yet utilized, which
+in enterprises all the time. However, there are benefits of having a class that aren't utilized yet, which
 will be covered in a future post.
 
 ## Next time: improving FizzBuzz performance for real enterprise scale

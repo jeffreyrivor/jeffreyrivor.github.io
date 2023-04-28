@@ -43,12 +43,12 @@ Besides the restrictions imposed by these assumptions, it is also not very perfo
 With the assumptions currently in place, one interesting fact that can be leveraged is that the generator is a
 [pure function](https://en.wikipedia.org/wiki/Pure_function). As a pure function, the output can be cached or pre-computed
 for a given input, and in pratical applications manifests as memory or distributed caches with eviction policies (usually
-leveraging non-random disproportiate demand to keep the outputs for frequently used inputs).
+leveraging non-random disproportiate demand to keep the outputs for frequently-used inputs).
 
 This pre-computed result cache can be taken one step further in FizzBuzz: the output for the specified divisors is always the
 same, so several inputs map to the same output. The outputs cycle on the
 [least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple) of the divisors. For example, in the specific
-FizzBuzz problem the LCM 15, so the input space can be reduced to an array of 15 functions that generate the output.
+FizzBuzz problem the LCM is 15, so the input space can be reduced to an array of 15 functions that generate the output.
 
 ```csharp
 public static class FizzBuzz

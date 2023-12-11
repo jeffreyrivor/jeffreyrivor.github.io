@@ -21,22 +21,19 @@ minima:
 permalink: pretty
 defaults:
   - scope:
+      path: ""
+      type: posts
+    values:
+      author: Jeffrey Rivor
+  - scope:
       path: "*.html"
       type: pages
     values:
       layout: page
   - scope:
-      path: /index.html
-      type: pages
+      path: "README.md"
     values:
-      layout: home
       list_title: All Posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      author: Jeffrey Rivor
 header_pages:
   - posts.html
   - japan.html

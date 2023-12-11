@@ -7,7 +7,21 @@ description: >
 show_excerpts: true
 
 timezone: America/Los_Angeles
-exclude: [".vs", ".vscode", "LICENSE"]
+
+# Jekyll [3.3, 4) requires user-configured excludes to manually prepend default excludes
+exclude:
+# defaults
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+# additions
+- LICENSE
+- .vs/
+- .vscode/
 
 remote_theme: jekyll/minima
 minima:

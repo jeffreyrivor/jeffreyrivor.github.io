@@ -8,10 +8,9 @@ source "https://rubygems.org"
 
 gem "github-pages", "~> 228", group: :jekyll_plugins
 
-gem "tzinfo-data", "~> 1.2023", platforms: :windows
-
 gem "jekyll-octicons", "~> 19.7"
 
 install_if -> { ENV["GITHUB_ACTIONS"] != "true" } do
+	gem "tzinfo-data", "~> 1.2023", platforms: :windows
 	gem "webrick", "~> 1.8"
 end

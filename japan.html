@@ -1,10 +1,10 @@
 ---
-title: Posts
+title: Posts about Japan
 ---
 
 <ul class="post-list">
 	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-	{%- assign posts = site.posts | where_exp: "post", "post.categories.size == 0" -%}
+	{%- assign posts = site.posts | where_exp: "post", "post.categories contains 'japan'" -%}
 	{%- for post in posts -%}
 	<li>
 		<span class="post-meta">{{ post.date | date: date_format }}</span>

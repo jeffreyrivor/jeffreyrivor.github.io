@@ -1,4 +1,4 @@
-title: Jeffrey Rivor's coding blog
+title: Jeffrey Rivor's blog
 author:
   name: Jeffrey Rivor
 description: >
@@ -7,7 +7,7 @@ description: >
 show_excerpts: true
 
 timezone: America/Los_Angeles
-exclude: ["LICENSE"]
+exclude: [".vs", ".vscode", "LICENSE"]
 
 remote_theme: jekyll/minima
 minima:
@@ -30,18 +30,16 @@ defaults:
       type: pages
     values:
       layout: home
+      list_title: All Posts
   - scope:
       path: ""
       type: posts
     values:
       layout: post
       author: Jeffrey Rivor
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:year/:month/:day/:title
 header_pages:
   - posts.html
+  - japan.html
 feed:
   excerpt_only: true
 markdown: GFM

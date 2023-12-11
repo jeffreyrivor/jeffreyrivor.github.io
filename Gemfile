@@ -12,4 +12,6 @@ gem "tzinfo-data", "~> 1.2023", platforms: :windows
 
 gem "jekyll-octicons", "~> 19.7"
 
-gem "webrick", "~> 1.8"
+install_if -> { ENV["GITHUB_ACTIONS"] != "true" } do
+	gem "webrick", "~> 1.8"
+end

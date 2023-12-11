@@ -8,7 +8,7 @@ source "https://rubygems.org"
 
 gem "github-pages", "~> 228", group: :jekyll_plugins
 
-gem "jekyll-octicons", "~> 19.7"
+gem "jekyll-octicons", "~> 14.2"
 
 install_if -> { ENV["GITHUB_ACTIONS"] != "true" } do
 	gem "tzinfo-data", "~> 1.2023"

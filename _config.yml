@@ -21,6 +21,7 @@ exclude:
 - vendor/ruby/
 # additions
 - LICENSE
+- .github/
 - .vs/
 - .vscode/
 
@@ -55,13 +56,30 @@ header_pages:
   - japan.html
 feed:
   excerpt_only: true
-markdown: GFM
+markdown: CommonMarkGhPages # config from github-pages for "GFM"
+commonmark: # config from github-pages
+  extensions: ["table", "strikethrough", "autolink", "tagfilter"]
+  options: ["unsafe", "footnotes"]
 readme_index:
   remove_orignals: true
+sass: # defaults from github-pages
+  style: compressed
 titles_from_headings:
   strip_title: true
   collections: true
 plugins:
+# defaults from github-pages
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+# additions
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-octicons

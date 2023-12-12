@@ -56,17 +56,40 @@ header_pages:
   - japan.html
 feed:
   excerpt_only: true
+lsi: false # defaults from github-pages
 markdown: CommonMarkGhPages # config from github-pages for "GFM"
-commonmark: # config from github-pages
+commonmark: # config from github-pages for "GFM"
   extensions: ["table", "strikethrough", "autolink", "tagfilter"]
   options: ["unsafe", "footnotes"]
 readme_index:
   remove_orignals: true
-sass: # defaults from github-pages
+sass: # defaults from github-pages for production
   style: compressed
 titles_from_headings:
   strip_title: true
   collections: true
+safe: true # defaults from github-pages
+whitelist: # defaults from github-pages
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-octicons
+  - jekyll-remote-theme
 plugins:
 # defaults from github-pages
   - jekyll-coffeescript

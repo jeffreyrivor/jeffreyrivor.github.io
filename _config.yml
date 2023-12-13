@@ -66,7 +66,7 @@ future: true # defaults from github-pages
 jailed: false # defaults from github-pages
 lsi: false # defaults from github-pages
 highlighter: rouge # defaults from github-pages
-markdown: CommonMarkGhPages # config from github-pages for "GFM"
+markdown: kramdown # defaults from github-pages
 commonmark: # config from github-pages for "GFM"
   extensions: ["table", "strikethrough", "autolink", "tagfilter"]
   options: ["unsafe", "footnotes"]

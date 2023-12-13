@@ -65,10 +65,21 @@ titles_from_headings:
 future: true # defaults from github-pages
 jailed: false # defaults from github-pages
 lsi: false # defaults from github-pages
+highlighter: rouge # defaults from github-pages
 markdown: CommonMarkGhPages # config from github-pages for "GFM"
 commonmark: # config from github-pages for "GFM"
   extensions: ["table", "strikethrough", "autolink", "tagfilter"]
   options: ["unsafe", "footnotes"]
+kramdown: # defaults from github-pages
+  input: GFM
+  hard_wrap: false
+  gfm_quirks:
+  - paragraph_end
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: 
+    default_lang: plaintext
+  template: ""
 gist: # defaults from github-pages
   noscript: false
 sass: # defaults from github-pages for production

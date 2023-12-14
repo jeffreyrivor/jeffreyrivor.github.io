@@ -25,7 +25,7 @@ exclude:
 - .vs/
 - .vscode/
 
-remote_theme: jekyll/minima
+theme: minima
 minima:
   skin: auto
   social_links:
@@ -101,7 +101,6 @@ whitelist: # defaults from github-pages
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-octicons
-  - jekyll-remote-theme
 plugins:
 # defaults from github-pages
   - jekyll-coffeescript
@@ -114,7 +113,6 @@ plugins:
   - jekyll-default-layout
   - jekyll-titles-from-headings
 # additions
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-octicons
   - jekyll-sitemap

@@ -94,7 +94,7 @@ whitelist: # defaults from github-pages
   - jekyll-mentions
   - jekyll-octicons
   - jekyll-optional-front-matter
-  - jekyll-paginate
+#  - jekyll-paginate removed due to no active development (switch to v2 if needed, but needs minima theme support)
   - jekyll-readme-index
   - jekyll-redirect-from
   - jekyll-relative-links
@@ -106,11 +106,9 @@ whitelist: # defaults from github-pages
 plugins:
   - jekyll-default-layout
   - jekyll-feed
-  - jekyll-gist
   - jekyll-github-metadata
   - jekyll-octicons
   - jekyll-optional-front-matter
-  - jekyll-paginate
   - jekyll-readme-index
   - jekyll-relative-links
   - jekyll-sitemap

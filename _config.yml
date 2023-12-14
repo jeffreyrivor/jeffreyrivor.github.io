@@ -67,9 +67,6 @@ jailed: false # defaults from github-pages
 lsi: false # defaults from github-pages
 highlighter: rouge # defaults from github-pages
 markdown: kramdown # defaults from github-pages
-commonmark: # config from github-pages for "GFM"
-  extensions: ["table", "strikethrough", "autolink", "tagfilter"]
-  options: ["unsafe", "footnotes"]
 kramdown: # defaults from github-pages
   input: GFM
   hard_wrap: false
@@ -87,7 +84,6 @@ sass: # defaults from github-pages for production
 safe: true # defaults from github-pages
 whitelist: # defaults from github-pages
   - jekyll-coffeescript
-  - jekyll-commonmark-ghpages
   - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata
@@ -109,7 +105,6 @@ whitelist: # defaults from github-pages
 plugins:
 # defaults from github-pages
   - jekyll-coffeescript
-  - jekyll-commonmark-ghpages
   - jekyll-gist
   - jekyll-github-metadata
   - jekyll-paginate

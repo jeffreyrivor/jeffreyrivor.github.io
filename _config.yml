@@ -104,17 +104,14 @@ whitelist: # defaults from github-pages
   - jekyll-titles-from-headings
   - jemoji
 plugins:
-# defaults from github-pages
-  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-relative-links
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
-# additions
-  - jekyll-feed
   - jekyll-octicons
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-relative-links
   - jekyll-sitemap
+  - jekyll-titles-from-headings

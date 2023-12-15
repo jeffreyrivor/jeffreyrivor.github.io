@@ -55,19 +55,14 @@ titles_from_headings:
 
 future: true # defaults from github-pages
 jailed: false # defaults from github-pages
-lsi: false # defaults from github-pages
-highlighter: rouge # defaults from github-pages
-markdown: kramdown # defaults from github-pages
-kramdown: # defaults from github-pages
-  input: GFM
-  hard_wrap: false
-  gfm_quirks:
+kramdown:
+  gfm_quirks: # defaults from github-pages
     - paragraph_end
-  math_engine: mathjax
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: 
+  math_engine: mathjax # defaults from github-pages
+  syntax_highlighter: rouge # defaults from github-pages
+  syntax_highlighter_opts: # defaults from github-pages
     default_lang: plaintext
-  template: ""
+  template: "" # defaults from github-pages
 gist: # defaults from github-pages
   noscript: false
 sass: # defaults from github-pages for production

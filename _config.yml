@@ -1,6 +1,7 @@
 title: Jeffrey Rivor's blog
 author:
   name: Jeffrey Rivor
+  email: ""
 description: >
   Principal Software Engineer at Microsoft since 2015.
   Opinions are my own.
@@ -9,17 +10,7 @@ show_excerpts: true
 lang: en-US
 timezone: America/Los_Angeles
 
-# Jekyll [3.3, 4) requires user-configured excludes to manually prepend default excludes
 exclude:
-# defaults
-- Gemfile
-- Gemfile.lock
-- node_modules
-- vendor/bundle/
-- vendor/cache/
-- vendor/gems/
-- vendor/ruby/
-# additions
 - LICENSE
 - .github/
 - .vs/

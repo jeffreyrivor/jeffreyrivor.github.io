@@ -14,6 +14,6 @@ gem "jekyll-relative-links", "~> 0.6.1"
 gem "jekyll-seo-tag", "~> 2.8"
 gem "jekyll-sitemap", "~> 1.4"
 gem "jekyll-titles-from-headings", "~> 0.5.3"
-gem "minima", "~> 3.0.dev", :github => "jekyll/minima", :ref => "10124515953527c8990a2de99ae4ddb2a81ffee3"
+gem "minima", "~> 3.0.dev", :github => "jekyll/minima", :ref => "6b9b78dad3e5c9f733c901e10287465735b36169"
 gem "tzinfo-data", "~> 1.2023", platforms: :windows
 gem "webrick", "~> 1.8"

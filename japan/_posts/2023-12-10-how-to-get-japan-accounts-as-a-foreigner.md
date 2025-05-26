@@ -1,5 +1,6 @@
 ---
 date: 2023-12-10 18:15:00 -0800
+modified_date: 2025-05-26 12:45:00 -0700
 ---
 # How to get Japan accounts as a foreigner
 
@@ -29,13 +30,24 @@ support foreign credit cards. When submitting a credit card for payment, "Japan-
 listed as a requirement and will simply fail without a clear reason; the presence of an international
 credit card brand in the list does not guarantee your foreign credit card will work.
 
-The method I used was to get a **Japanese** [LINE Pay](https://pay.line.me/portal/global/about/sign-up)
+~~The method I used was to get a **Japanese** [LINE Pay](https://pay.line.me/portal/global/about/sign-up)
 account using the Japanese SIM I obtained from Mobal (note: signing up for LINE initially will require
 receiving an SMS code on the Japanese cell phone number you sign up with). This is a prepaid virtual
 credit card issued in Japan on the Visa payment network, so any site that requires a Japanese-issued
 Visa card should work. However, charging the card requires a Japanese bank account, 7-11 ATM, or Lawson
 "Loppi" copy machines. This effectively means you have to plan your purchases accordingly and load the
-card while in Japan.
+card while in Japan.~~ As of April 30, 2025, LINE Pay service in Japan
+[has been discontinued](https://www.lycorp.co.jp/en/news/release/008632/). Full feature deprecation
+timeline is available in Japanese at <https://line-pay-info.landpress.line.me/payment-info/>.
+
+The method I used was [Vandle Card](https://vandle.jp/) using the Japanese SIM I obtained from Mobal
+(note: signing up for Vandle initially will require receiving an SMS code on the Japanese phone number
+you sign up with). However, the Android app is only available in the Japanese Google Play store so a
+Japanese Google account will be required (multiple Google accounts can be signed into Google Play
+simultaneously on Android phones); I have not tested with the Apple App Store. Unlike LINE Pay, there
+are methods to load the prepaid balance that can be completed online (in addition to 7-11 ATM, Lawson
+ATM, and other convenience store methods), namely credit cards that support 3D Secure (which I have
+tested successfully using an American Express issued by American Express National Bank in the U.S.).
 
 ### Payment examples
 
@@ -52,6 +64,12 @@ in the U.S. (the same one I tried on au PAY) succeeds. Other sites using Lawson 
 probably also work; I've successfully used [HMV & Books Online](https://www.hmv.co.jp/) with a U.S.
 shipping address (side note: while the shipping costs can be steep because of using international air
 freight, they are meticulous in packaging everything to prevent damage in transit).
+
+Another example that was previously broken and now works as of March 2025 is [e+](https://eplus.jp) with
+American Express issued by American Express National Bank in the U.S. Note that the "overseas" e+ site
+is separate and has generally broader support for credit cards, whereas the Japanese site requires
+receiving an SMS code on the Japanese cell phone number you sign up with in addition to generally
+supporting only Japanese-issued credit cards until the American Express started working.
 
 ## Situational: geo-blocking
 

@@ -62,8 +62,10 @@ kramdown:
     - paragraph_end
   math_engine: mathjax # defaults from github-pages
   syntax_highlighter: rouge # defaults from github-pages
-  syntax_highlighter_opts: # defaults from github-pages
-    default_lang: plaintext
+  syntax_highlighter_opts:
+    default_lang: plaintext # defaults from github-pages
+    block:
+      line_numbers: true
   template: "" # defaults from github-pages
 gist: # defaults from github-pages
   noscript: false

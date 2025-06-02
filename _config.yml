@@ -5,7 +5,6 @@ author:
 description: >
   Principal Software Engineer at Microsoft since 2015.
   Opinions are my own.
-show_excerpts: true
 
 lang: en-US
 timezone: America/Los_Angeles
@@ -19,11 +18,14 @@ exclude:
 theme: minima
 minima:
   skin: auto
+  show_excerpts: true
   social_links:
-    - platform: github
-      user_url: https://github.com/jeffreyrivor
-    - platform: linkedin
-      user_url: https://www.linkedin.com/in/jeffrey-r-9300913a
+    - title: GitHub
+      icon: github
+      url: https://github.com/jeffreyrivor
+    - title: LinkedIn
+      icon: linkedin
+      url: https://www.linkedin.com/in/jeffrey-r-9300913a
 
 permalink: pretty
 defaults:

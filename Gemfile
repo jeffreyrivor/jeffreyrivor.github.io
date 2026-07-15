@@ -2,7 +2,6 @@
 
 source "https://rubygems.org"
 
-gem "github-pages-health-check", "= 1.17.9"
 gem "jekyll", "~> 4.0"
 gem "jekyll-default-layout", "~> 0.1.5"
 gem "jekyll-feed", "~> 0.15"
